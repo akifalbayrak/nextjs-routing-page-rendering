@@ -1,8 +1,7 @@
 "use client";
 
 import { DUMMY_NEWS } from "@/dummy-news";
-import { notFound } from "next/navigation";
-import { useRouter } from "next/router";
+import { notFound, useRouter } from "next/navigation";
 
 export default function InterceptImagePage({ params }) {
     const router = useRouter();
