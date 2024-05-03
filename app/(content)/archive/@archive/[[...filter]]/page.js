@@ -13,7 +13,7 @@ async function FilterHeader({ year, month }) {
     let links = avaliableYears;
 
     if (
-        (year && !avaliableYears().includes(year)) ||
+        (year && !avaliableYears.includes(year)) ||
         (month && !getAvailableNewsMonths(year).includes(month))
     ) {
         throw new Error("Invalid filter.");
